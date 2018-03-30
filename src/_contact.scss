@@ -1,0 +1,37 @@
+.contact{
+    min-height: 50vh;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    .info{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        order: 1;
+        background-color: rgb(46, 46, 46);
+        color: white;
+        .info-title{
+            
+            h1{
+                margin-top: 40px;
+                font-size: 25px;
+               
+            }
+        }
+        .info-box{
+            
+            min-height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 18px;
+            
+        }
+    }
+    iframe{
+    
+        width: 50%;
+        min-height: 50vh;
+    }
+}

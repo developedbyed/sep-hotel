@@ -1,0 +1,63 @@
+$mainColor : #385577;
+@import 'reset';
+@import 'header';
+@import 'offer';
+@import 'contact';
+
+@media screen and (max-width:768px){
+    header{
+        
+         .logo{
+             width: 100%;
+         }
+         .intro{
+             h1{
+                 font-size: 22px;
+             }
+             p{
+                 font-size: 16px;
+                 padding: 15px 0px;
+             }
+         }
+         nav{
+             width: 80%;
+             #about,#contact{
+                 padding: 10px 10px;
+                 min-width: 90px;
+             }
+         }
+    }
+    .rooms{
+        .room1{
+            height: 20vh;
+            .intro1{
+                h1{
+                    font-size: 18px;
+                }
+            }
+        }
+        .room2{
+            height: 20vh;
+            .intro2{
+                h1{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .contact{
+        display: block;
+        .info{
+            width: 100%;
+            min-height: 40vh;
+           .info-box{
+               font-size: 16px;
+               padding: 5px 20px;
+               line-height: 1.5em;
+           }
+        }
+        iframe{
+            width: 100%;
+        }
+    }
+ }

@@ -1,0 +1,71 @@
+header{
+   min-height: 80vh;
+   background: url('/public/img/pexel2.jpg');
+   background-size: cover;
+   background-position:center;
+   background-repeat: no-repeat;
+   font-family: 'Montserrat', sans-serif;
+    .logo{
+        min-height: 10vh;
+        background-color:$mainColor;
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .intro{
+        color: rgb(231, 231, 231);
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 40px;
+            padding-bottom: 20px;
+            animation: titleFade 0.5s ease-in 0.5s forwards;
+            opacity: 0;
+        }
+        p{
+            font-size: 20px;
+            padding:20px 40px;
+            border-top: 1px solid white;
+            margin-top: 20px;
+            opacity: 0;
+            animation: titleFade 0.5s ease-in 1s forwards;
+        }
+    }
+    nav{
+        display: flex;
+        width: 40%;
+        margin: auto;
+        justify-content: space-around;
+        min-height: 10vh;
+        align-items: center;
+        #about,#contact{
+            background-color: $mainColor;
+            padding: 15px 30px;
+            min-width: 140px;
+            font-size: 17px;
+            border: 2px solid $mainColor;
+            border-radius: 3px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+@keyframes titleFade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
